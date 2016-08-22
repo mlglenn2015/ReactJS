@@ -54,6 +54,32 @@ p, ul {
   margin: 15px 0;
 }
 
+table {
+  border: 1px solid #ddd;
+}
+
+td, th {
+  border: 1px solid #ddd;
+}
+
 ul {
   padding-left: 30px;
+}
+
+.columnHead {
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 2px;
+  padding: 0 5px;
+  text-align: left;
+}
+
+.tableHead {
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 2px;
+  padding: 0 5px;
+  text-align: center;
 }

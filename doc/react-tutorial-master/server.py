@@ -39,6 +39,22 @@ def comments_handler():
         }
     )
 
+@app.route('/api/products', methods=['GET'])
+def products_handler():
+    with open('products.json', 'r') as f:
+        products = json.loads(f.read())
+
+
+
+    return Response(
+        json.dumps(products),
+        mimetype='application/json',
+        headers={
+            'Cache-Control': 'no-cache',
+            'Access-Control-Allow-Origin': '*'
+        }
+    )
+
 
 if __name__ == '__main__':
     app.run(port=int(os.environ.get("PORT", 3000)))

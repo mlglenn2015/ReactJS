@@ -17,6 +17,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 var COMMENTS_FILE = path.join(__dirname, 'comments.json');
+var PRODUCTS_FILE = path.join(__dirname, 'products.json');
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -68,6 +69,17 @@ app.post('/api/comments', function(req, res) {
       }
       res.json(comments);
     });
+  });
+});
+
+
+app.get('/api/products', function(req, res) {
+  fs.readFile(PRODUCTS_FILE, function(err, data) {
+    if (err) {
+      console.error(err);
+      process.exit(1);
+    }
+    res.json(JSON.parse(data));
   });
 });
 

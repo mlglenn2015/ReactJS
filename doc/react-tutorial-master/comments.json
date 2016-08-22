@@ -1,27 +1,27 @@
 [
-    {
-        "id": 1388534400000,
-        "author": "Pete Hunt",
-        "text": "Hey there!"
-    },
-    {
-        "id": 1420070400000,
-        "author": "Paul O'Shannessy",
-        "text": "React is *great*!"
-    },
-    {
-        "id": 1471556374258,
-        "author": "Mark",
-        "text": "Something"
-    },
-    {
-        "id": 1471626162279,
-        "author": "Mark2",
-        "text": "something"
-    },
-    {
-        "id": 1471626376328,
-        "author": "Developer 1",
-        "text": "i have something to say"
-    }
+  {
+    "id": 1388534400000,
+    "author": "Pete Hunt",
+    "text": "Hey there!"
+  },
+  {
+    "id": 1420070400000,
+    "author": "Paul O'Shannessy",
+    "text": "React is *great*!"
+  },
+  {
+    "id": 1471556374258,
+    "author": "Mark",
+    "text": "Something"
+  },
+  {
+    "id": 1471626162279,
+    "author": "Mark2",
+    "text": "something"
+  },
+  {
+    "id": 1471626376328,
+    "author": "Developer 1",
+    "text": "i have something to say"
+  }
 ]
