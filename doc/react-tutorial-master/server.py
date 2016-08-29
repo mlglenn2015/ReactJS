@@ -39,12 +39,18 @@ def comments_handler():
         }
     )
 
-@app.route('/api/products', methods=['GET'])
+@app.route('/api/products', methods=['GET', 'POST'])
 def products_handler():
     with open('products.json', 'r') as f:
         products = json.loads(f.read())
 
+    if request.method == 'POST':
+            new_product = request.form.to_dict()
+            new_product['id'] = int(new_product['id'])
+            products.append(new_product)
 
+            with open('products.json', 'w') as f:
+                f.write(json.dumps(products, indent=4, separators=(',', ': ')))
 
     return Response(
         json.dumps(products),
